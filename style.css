@@ -1,0 +1,878 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background:white;
+    box-shadow: 0px 0px 15px 0px #647BA3;
+    z-index: 1;
+    margin-bottom: -100px;
+    top: 0;
+
+}
+
+nav{
+    display: block;
+    height: 100%;
+    width: 90%;
+    background-color: white;
+    font-family: Poppins;
+    font-size: 34px;
+    margin: 0 auto;
+    
+}
+
+.start{
+    width: 40%;
+    height: 100%;
+    background: none;
+    float: left;
+}
+
+
+#logo{
+    margin-top: 30px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    float: left;
+    right: 100px;
+    align-items: center;
+}
+
+.nav-links li{
+    list-style: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+.nav-links a{
+    color: #1f1f1f;
+    text-decoration: none;
+    display: flex;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.burger {
+    display: none;
+    float: left;
+    margin-top: 40px;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    transition: all 0.3s ease;
+    z-index: 5;
+    
+}
+
+
+.toggle .line1{
+    transform : rotate(-45deg) translate(-7px,6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-8px,-7px);
+}
+
+header div{
+    width: 20%;
+    height: 100%;
+    background: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background: none;
+    width: 60%;
+    display: flex;
+}
+
+.menu li{
+    font-size: 4vh;
+    color: #FAFAFA;
+    list-style-type: none;
+    font-family: Poppins;
+    font-weight: bold;
+    
+}
+
+.menu a{
+    color: #6A6A6A;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 15px;
+}
+
+menu a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+#home{
+    background: url('images/image9.jpeg') no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#home h1{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 34px;
+    color: white;
+    text-align: center;
+}
+
+#home div{
+    width: 10%;
+}
+
+#home div .logo{
+    width: 10%;
+    background: white;
+}
+
+#home a{
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px;
+    width: 16%;
+    font-family: Poppins;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+    border: 1px solid white;
+    color: black;
+}
+
+#home a:hover{
+    
+    background: #647BA3;
+    border: 1px solid white;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 14%;
+    font-family: Poppins;
+    font-weight: bolder;
+}
+
+#maxime{
+    background-color: none;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 4px;
+    margin: 0 auto;
+}
+
+#maxime article {
+    width: 65%;
+    background: url('images/image11.jpeg') no-repeat center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+#maxime article img {
+    width: 100%;
+    height: 80%;
+    padding: 24px;
+    
+}
+#maxime .paragraphe {
+    font-size: 6vh;
+    width: 60%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+#maxime .paragraphe:nth-child(1) {
+    margin: 20px;
+    
+}
+
+
+
+h2{
+    font-size: 4vh;
+    font-family: Poppins;
+    text-align: left;
+    font-weight: 700;
+    color: #94B1AF;
+}
+
+#maxime .paragraphe p{
+    font-size: 2vh;
+    font-family: Poppins;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+#terrasse .titerrasse{
+    width: 90%;
+    height: 30px;
+    font-size: 32px;
+    font-family: Poppins;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-weight: bold;
+
+}
+#terrasse .images{
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    top: 50%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.images img{
+    margin-bottom: 5%;
+}
+
+.images img:hover{
+    background-color: white;
+   opacity: 0.3;
+}
+
+
+#offers {
+    height: 90vh;
+    width: 100%;
+    background: #FAF9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+#offers article:nth-child(1) {
+    height: 30%;
+    width: 80%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 auto;
+}
+
+
+
+#offers article:nth-child(1) p  {
+    color: white;
+    font-size: 2vh;
+    font-family: Poppins;
+    text-align: left;
+    font-weight: 400;
+}
+
+#offers article:nth-child(2) {
+    height: 100%;
+    width: 80%;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#offers article:nth-child(2) div {
+    height: 80%;
+    width: 25%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px 0px #EDEDED;
+
+}
+
+#offers article:nth-child(2) div ul{
+    height: 50%;
+    width: 100%;
+    background: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    
+
+}
+
+#offers article:nth-child(2) div ul li{
+    list-style-type: none;
+    font-family: Poppins;
+
+}
+
+#offers article:nth-child(2) div ul li::before{
+    font-family: Poppins;
+    content: "•"; 
+    color: #647BA3;
+    margin: 9px;
+    font-size: 14px;
+}
+
+#offers article:nth-child(2) div ul h4{
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 800;
+    color: #191919;
+}
+
+#offers article:nth-child(2) div ul button{
+    font-family: Poppins;
+    padding: 16px;
+    font-size: 14px;
+    border: 4px solid #647BA3;
+    background: white;
+    width: 50%;
+    cursor: pointer;
+}
+
+#offers article:nth-child(2) div ul button:hover{
+    background: #647BA3;
+    color: white;
+}
+
+#offers article:nth-child(2) div h3{
+   color: #6A6A6A;
+   font-family: Poppins;
+   font-weight: 700;
+
+}
+
+#offers article img{
+    width: 70%;
+}
+
+#lieux{
+    height: 70vh;
+    width: 100%;
+    background: white;
+    display: block;
+}
+
+
+#lieux article{
+    height: 90%;
+    width: 50%;
+    background: white;;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+#lieux article:nth-child(1){
+    width: 60%;
+    float: left;
+}
+
+#lieux article:nth-child(2){
+    width: 40%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lieux article img{
+    width: 100%;
+    margin: 20px;
+}
+
+
+
+#lieux article p {
+    color: black;
+    font-size: 2vh;
+    font-family: Poppins;
+    text-align: left;
+    font-weight: 400;
+}
+
+#degradations{
+    background-color: none;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 4px;
+    margin: 0 auto;
+}
+
+#degradations article {
+    width: 60%;
+    background: url('images/jakob-owens-qoFQxxuk3QY-unsplash.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#degradations article img {
+    width: 100%;
+    height: 80%;
+    padding: 24px;
+}
+#degradations .paragraphe {
+    font-size: 6vh;
+    width: 40%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+#degradations .paragraphe:nth-child(1) {
+    margin: 20px;
+    
+}
+
+#degradations .paragraphe p{
+    font-size: 2vh;
+    font-family: Poppins;
+    text-align: left;
+    font-weight: 400;
+}
+
+#degradations .paragraphe ul li{
+    font-size: 2vh;
+    font-family: Poppins;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 10px;
+}
+#contact{
+    height: 60vh;
+    width: 100%;
+    background: #FAF9F9;
+    margin: 0 auto;
+    
+}
+
+#contact div{
+    height: 100%;
+    width: 80%;
+    background:none;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+#contact article:nth-child(1){
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: url('images/contact.jpeg') no-repeat center;
+    background-size: cover;
+
+}
+
+#contact article:nth-child(2){
+    width: 45%;
+    height: 100%;
+    float: left;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: 10px;
+    margin: 0 auto;
+}
+
+
+
+#contact article h3{
+    margin-left: 20px;
+    font-weight: 700;
+}
+#contact article form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+#contact article form h4{
+    font-family: Poppins;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+#contact article form input{
+    width: 60%;
+    height: 40px;
+    background: white;
+    border: none;
+    box-shadow: none;
+    margin-top: 14px;
+    /*box-shadow: 0px 0px 3px 0px #647BA3;*/
+    border: 1px solid #647BA3;
+}
+
+#contact article form button{
+   background: none;
+   border: 1px solid #647BA3;
+   width: 20%;
+   padding: 10px;
+   margin-top: 30px;
+   cursor: pointer;
+}
+
+#contact article form button:hover{
+    background: #647BA3;
+    border: 1px solid #647BA3;
+    color: white;
+ }
+#contact article h3{
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+
+#video{
+    width: 90%;
+    margin: 0 auto;
+    background-color: none;
+    height: 80vh;
+    clear: left;
+}
+
+video iframe {
+    width: 100%;
+}
+
+#video p{
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 39px;
+    color: black;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 15px 0px #F7F7F7;
+}
+
+footer ul{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: none;
+    align-items: center;
+    margin: 0 auto;
+}
+
+footer ul li{
+    font-size: 2vh;
+    font-family: Poppins;
+    list-style-type: none;
+}
+
+/** Pour faire du responsive media queries **/
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1024px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 2;
+        
+    }
+
+    .nav-links li {
+        opacity: 0;
+        margin-top: 20px;
+        
+    }
+
+    .nav-links a {
+        font-size: 23px;
+        
+    }
+
+    .burger{
+        display: block;
+        float: right;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .menu li {
+        font-size: 32px;
+    }
+
+    .menu a {
+        font-size: 32px;
+    }
+
+    #maxime{
+        flex-direction: column;
+        display: flex;
+    }
+
+    #maxime article
+    {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #maxime .paragraphe
+    {
+        width: 100%;
+        height: 40vh;
+        background-color: none
+        ;
+        margin: 0px;
+    }
+
+    #terrasse
+    {
+        display: flex;
+        flex-direction: column;
+        height: 233vh;
+        background: none;
+    }
+
+    #offers{
+        height:138vh;
+        justify-content: none;
+    }
+
+    #offers article:nth-child(1){
+        height: 10%;
+    }
+
+    #offers article:nth-child(2)
+    {
+        
+        flex-direction: column;
+    }
+
+    #offers article:nth-child(2) div
+    {
+        height: 365px;
+        width: 100%;
+    }
+
+    #degradations{
+        flex-direction: column;
+        margin-top: 200px;
+        height: 101vh;
+
+    }
+
+    #degradations article{
+        width:100%;
+        height: 104vh;
+    }
+
+    #degradations .paragraphe:nth-child(1){
+        width: 100%;
+    }
+
+    #degradations .paragraphe h2{
+        width: 100%;
+    }
+
+    #degradations .paragraphe p{
+        width: 100%;
+    }
+
+    #lieux{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #lieux article:nth-child(1){
+        width: 100%;
+    }
+    #lieux article p{
+        text-align: left;
+        margin: 10px;
+    }
+
+    #lieux article:nth-child(2){
+        width: 100%;
+    }
+
+    #contact{
+        width: 100%;
+    }
+
+    #contact article h2{
+        margin-left: -20px;
+        width: 100%;
+        font-size: 3vh;
+    }
+
+    #contact article h3{
+        margin-left: -20px;
+        width: 100%;
+    }
+
+    #contact article form{
+        margin-left: -20px;
+        width: 100%;
+    }
+
+    #contact article:nth-child(1){
+        width: 100%;
+        height: 40vh;
+        
+    }
+
+    #contact article:nth-child(2){
+        display: block;
+        width: 80%;
+        
+    }
+
+    #contact div{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    footer{
+        margin-top: 30px;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 368px){
+    #home button{
+        width: 30%;
+    }
+
+    #contact{
+        height:85vh
+    }
+    #degradations{
+        height : 124vh
+    }
+
+    #degradations article{
+        margin-top: 40px;
+    }
+    #degradations .paragraphe:nth-child(1){
+        margin:-19px ;
+    }
+
+    #degradations .paragraphe h2{
+        width: 30%;
+        font-size: 3vh;
+    }
+
+    #terrasse .images {
+        width: 100%;
+    }
+
+    #terrasse .images img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 368px){
+    #contact article form button{
+        width: 50%;
+    }
+}
